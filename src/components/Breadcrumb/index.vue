@@ -10,6 +10,9 @@
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+
 const route = useRoute();
 const router = useRouter();
 const levelList = ref([])
@@ -20,7 +23,7 @@ function getBreadcrumb() {
   const first = matched[0]
   // 判断是否为首页
   if (!isDashboard(first)) {
-    matched = [{ path: '/index', meta: { title: '首页' } }].concat(matched)
+    matched = [{ path: '/index', meta: { title: t('menus.首页') } }].concat(matched)
   }
 
   levelList.value = matched.filter(item => item.meta && item.meta.title && item.meta.breadcrumb !== false)

@@ -1,7 +1,7 @@
 <template>
   <el-drawer v-model="showSettings" :withHeader="false" direction="rtl" size="300px">
     <div class="setting-drawer-title">
-      <h3 class="drawer-title">主题风格设置</h3>
+      <h3 class="drawer-title">{{ $t('home.主题风格设置') }}</h3>
     </div>
     <div class="setting-drawer-block-checbox">
       <div class="setting-drawer-block-checbox-item" @click="handleTheme('theme-dark')">
@@ -26,45 +26,45 @@
       </div>
     </div>
     <div class="drawer-item">
-      <span>主题颜色</span>
+      <span>{{ $t('home.主题颜色') }}</span>
       <span class="comp-style">
         <el-color-picker v-model="theme" :predefine="predefineColors" @change="themeChange"/>
       </span>
     </div>
     <el-divider />
 
-    <h3 class="drawer-title">系统布局配置</h3>
+    <h3 class="drawer-title">{{ $t('home.系统布局配置') }}</h3>
 
     <div class="drawer-item">
-      <span>开启 TopNav</span>
+      <span>{{ $t('home.开启') }} TopNav</span>
       <span class="comp-style">
         <el-switch v-model="settingsStore.topNav" @change="topNavChange" class="drawer-switch" />
       </span>
     </div>
 
     <div class="drawer-item">
-      <span>开启 Tags-Views</span>
+      <span>{{ $t('home.开启') }}  Tags-Views</span>
       <span class="comp-style">
         <el-switch v-model="settingsStore.tagsView" class="drawer-switch" />
       </span>
     </div>
 
     <div class="drawer-item">
-      <span>固定 Header</span>
+      <span>{{ $t('home.固定') }}  Header</span>
       <span class="comp-style">
         <el-switch v-model="settingsStore.fixedHeader" class="drawer-switch" />
       </span>
     </div>
 
     <div class="drawer-item">
-      <span>显示 Logo</span>
+      <span>{{ $t('home.显示') }} Logo</span>
       <span class="comp-style">
         <el-switch v-model="settingsStore.sidebarLogo" class="drawer-switch" />
       </span>
     </div>
 
     <div class="drawer-item">
-      <span>动态标题</span>
+      <span>{{ $t('home.动态标题') }}</span>
       <span class="comp-style">
         <el-switch v-model="settingsStore.dynamicTitle" class="drawer-switch" />
       </span>
@@ -72,8 +72,8 @@
 
     <el-divider />
 
-    <el-button type="primary" plain icon="DocumentAdd" @click="saveSetting">保存配置</el-button>
-    <el-button plain icon="Refresh" @click="resetSetting">重置配置</el-button>
+    <el-button type="primary" plain icon="DocumentAdd" @click="saveSetting">{{ $t('home.保存配置') }}</el-button>
+    <el-button plain icon="Refresh" @click="resetSetting">{{ $t('home.重置配置') }}</el-button>
   </el-drawer>
 
 </template>

@@ -1,0 +1,53 @@
+export default {
+  home: {
+    欢迎语: 'Welcome to Ruoyi',
+    标题: 'RuoYi',
+    语言选择: 'Select Language',
+    布局大小: 'Layout Size',
+    布局设置: 'Layout Setting',
+    退出登录: 'Logout',
+    主题风格设置: 'Theme Style Settings',
+    主题颜色: 'Theme Color',
+    系统布局配置: 'System Layout Configuration',
+    开启: 'Enable',
+    固定: 'Fixed',
+    显示: 'Display',
+    动态标题: 'Dynamic Title',
+    保存配置: 'Save Configuration',
+    重置配置: 'Reset Configuration'
+  },
+  login: {
+    用户名: 'Username',
+    密码: 'Password',
+    登录: 'Login',
+    验证码: 'Code',
+    记住密码: 'Remember Password',
+    确认密码: 'Confirm Password',
+    登录中: 'Loading',
+    立即注册: 'Register',
+    请输入您的账号: 'Input Your Username',
+    请输入您的密码: 'Input Your Password',
+    请输入验证码: 'Input Your Code'
+  },
+  menus: {
+    首页: 'Home',
+    个人中心: 'Profile',
+    分配角色: 'Assign Roles',
+    分配用户: 'Assign Users',
+    字典数据: 'Dictionary Data',
+    调度日志: 'Schedule Log',
+    修改生成配置: 'Edit Generation Configuration',
+    系统管理: 'System Management',
+    用户管理: 'User Management',
+    角色管理: 'Role Management',
+    菜单管理: 'Menu Management',
+    部门管理: 'Department Management',
+    岗位管理: 'Position Management',
+    字典管理: 'Dictionary Management',
+    参数设置: 'Parameter Settings',
+    通知公告: 'Notifications',
+    日志管理: 'Log Management',
+    操作日志: 'Operation Logs',
+    登录日志: 'Login Logs'
+  }
+}  

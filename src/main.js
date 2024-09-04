@@ -5,6 +5,7 @@ import Cookies from 'js-cookie'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import locale from 'element-plus/es/locale/lang/zh-cn'
+import i18n from './language';
 
 import '@/assets/styles/index.scss' // global css
 
@@ -71,7 +72,6 @@ app.use(store)
 app.use(plugins)
 app.use(elementIcons)
 app.component('svg-icon', SvgIcon)
-
 directive(app)
 
 // 使用element-plus 并且设置全局的大小
@@ -80,5 +80,7 @@ app.use(ElementPlus, {
   // 支持 large、default、small
   size: Cookies.get('size') || 'default'
 })
+
+app.use(i18n)
 
 app.mount('#app')

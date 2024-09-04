@@ -1,14 +1,14 @@
 <template>
   <div class="register">
     <el-form ref="registerRef" :model="registerForm" :rules="registerRules" class="register-form">
-      <h3 class="title">若依后台管理系统</h3>
+      <h3 class="title">{{ $t('home.title') }}</h3>
       <el-form-item prop="username">
         <el-input 
           v-model="registerForm.username" 
           type="text" 
           size="large" 
           auto-complete="off" 
-          placeholder="账号"
+          :placeholder="$t('login.username')"
         >
           <template #prefix><svg-icon icon-class="user" class="el-input__icon input-icon" /></template>
         </el-input>
@@ -19,7 +19,7 @@
           type="password"
           size="large" 
           auto-complete="off"
-          placeholder="密码"
+          :placeholder="$t('login.password')"
           @keyup.enter="handleRegister"
         >
           <template #prefix><svg-icon icon-class="password" class="el-input__icon input-icon" /></template>
@@ -31,7 +31,7 @@
           type="password"
           size="large" 
           auto-complete="off"
-          placeholder="确认密码"
+          :placeholder="$t('login.confirmPassword')"
           @keyup.enter="handleRegister"
         >
           <template #prefix><svg-icon icon-class="password" class="el-input__icon input-icon" /></template>
